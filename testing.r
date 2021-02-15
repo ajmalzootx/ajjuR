@@ -12,6 +12,9 @@ class(z)
 as.numeric(z)
 as.logical(z)
 as.character(z)
-m <- matrix(nrow = 1,ncol = 4)
+m <- matrix(6:9,nrow = 1,ncol = 4)
 m
-attributes(m)
+
+factor_nafi <- factor(c('yes','no','false','no','yes','false'))
+factor_nafi
+unclass(factor_nafi)
